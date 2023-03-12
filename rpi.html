@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<title>Raspberry Pi Projects</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<meta name="author" content="Robert Baase">
+<meta name="description" content="This page was created for a web design class. It is a current portfolio of all projects I have started or completed. This includes hypervisors, rack mounted servers, virtualization, and 3D printing. This is only the start of my documentation of all my projects.">
+</head>
+<body>
+<div id="wrapper">
+	<header>
+	<a href="home.html"><img src="img/header.jpg" alt="header" width="750" height="240"></a>
+	</header>
+	<nav>
+	<a href="home.html">Home</a>
+	<a href="about.html">About</a>
+	<a href="server.html">Server</a>
+	<a href="omv.html">OMV</a>
+	<a href="mineos.html">MineOS</a>
+	<a href="rpi.html">Rasp-Pi</a>
+	<a href="e3p.html">Ender3Pro</a>
+	</nav>
+	<main>
+	<img class="center" src="img/rpilogo.jpg" alt="raspberry pi">
+	<p>Currently I am operating 2 Raspberry Pi single board computers that run a few different systems. One is a forward facing machine that is seperated from my other machines and the other 
+	runs my 3D printer. This page will mainly deal with the Raspberry Pi that runs my forward facing systems, all of my exposed services run on this machine for isolation.
+	</p>
+	<h3>OctoPrint</h3>
+	<h5><a href="https://www.raspberrypi.com/products/raspberry-pi-3-model-b-plus/" target="_blank">Raspberry Pi 3B+</a></h5>
+	<dl>
+	<dt><a href="https://octoprint.org/" target="_blank">OctoPrint</a></dt>
+	<dd>The operating system that this Raspberry Pi runs. This controls my 3D printer.</dd>
+	</dl>
+	<h5>More information on <a href="e3p.html">Ender 3 Pro</a> page.</h5>
+	<h3>DietPi</h3>
+	<h5><a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/" target="_blank">Raspberry Pi 4 Model B</a></h5>
+	<dl>
+	<dt><a href="https://dietpi.com/" target="_blank">DietPi</a></dt>
+	<dd>The main operating system for this machine that runs all of my forward facing applications. These are all also containerized with docker as it makes for easy deployment of multiple things. This is also where this page will be hosted once made live.</dd>
+	<dt><a href="https://www.docker.com/" target="_blank">docker</a>|<a href="https://www.portainer.io/?hsLang=en" target="_blank">portainer</a></dt>
+	<dd>Put these both together as you know by now this is my favorite method to deploy programs and multiple copies of those programs.</dd>
+	<dt><a href="https://hub.docker.com/r/jc21/nginx-proxy-manager" target="_blank">nginx reverse proxy</a></dt>
+	<dd>Provides secure outside access by letting applications on other ports point to the internet and routes them through a secure port.</dd>
+	<dt><a href="https://hub.docker.com/r/favonia/cloudflare-ddns" target="_blank">cloudflare ddns</a></dt>
+	<dd>Any time my IP address changes this updates my cloudfare account with my new IP and helps me use proxied hosts to not expose my network.</dd>
+	<dt><a href="https://hub.docker.com/_/wordpress" target="_blank">Wordpress</a></dt>
+	<dd>I run 2 different Wordpress sites currently that have not been setup. Their uptime has proved to be stable and I just need to acutally work on them.</dd>
+	<dt><a href="https://hub.docker.com/r/containrrr/watchtower" target="_blank">watchtower</a></dt>
+	<dd>The container that checks for any updates to my currently running and updates them.</dd>
+	<dt><a href="" target="_blank"></a></dt>
+	<dd></dd>
+	<dt><a href="" target="_blank"></a></dt>
+	<dd></dd> 
+	</dl>
+	</main>
+	<footer>
+	Robert Baase | <a href="mailto:baase01@email.franklin.edu">baase01@email.franklin.edu</a> | <a href="sitemap.html">Sitemap</a>
+	</footer>
+</div>
+</body>
+</html>

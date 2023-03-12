@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<title>Open Media Vault Project</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<meta name="author" content="Robert Baase">
+<meta name="description" content="This page was created for a web design class. It is a current portfolio of all projects I have started or completed. This includes hypervisors, rack mounted servers, virtualization, and 3D printing. This is only the start of my documentation of all my projects.">
+</head>
+<body>
+<div id="wrapper">
+	<header>
+	<a href="home.html"><img src="img/header.jpg" alt="header" width="750" height="240"></a>
+	</header>
+	<nav>
+	<a href="home.html">Home</a>
+	<a href="about.html">About</a>
+	<a href="server.html">Server</a>
+	<a href="omv.html">OMV</a>
+	<a href="mineos.html">MineOS</a>
+	<a href="rpi.html">Rasp-Pi</a>
+	<a href="e3p.html">Ender3Pro</a>
+	</nav>
+	<main>
+	<img id="omv" class="center" src="img/omv.png" alt="omv banner" width="333" height="42">
+	<p>OMV - Open Media Vault, is what I use for my NAS and is currently ran with 4 CPU cores, 8GB of RAM, 20GB of SSD space, and all useable 3.6TB of a RAID 5 array. This functions as a home for all the houehold's media, 
+		streams it,
+		and allows you to automaticly add media.</p>
+		<p>
+		This is all done by using OMV as the operating system and passing through the RAID controller. 
+		This provides storage and a base for docker to install for containerizing programs, making them contained installs that can link to each other. I then installed portainer a docker container management system. So 
+		most programs are ran through this for managment and ease of use while OMV takes care of storage and sharing of that storage.
+		</p>
+		<p>Below is a descriptive list for the programs that make this all happen.</p>
+	<dl>
+	<dt><a href="https://www.openmediavault.org/" target="_blank">OMV - Open Media Vault</a></dt>
+	<dd>Main operating system that docker was installed onto.</dd>
+	<dt><a href="https://www.docker.com/" target="_blank">docker</a></dt>
+	<dd>Runs programs in containers and keeps them contained for fail protection and ease of deployment.</dd>
+	<dt><a href="https://www.portainer.io/?hsLang=en" target="_blank">portainer</a></dt>
+	<dd>Management dashboard container for docker so you can use a web interface and not always use the CLI.</dd>
+	<dt><a href="https://hub.docker.com/r/linuxserver/heimdall" target="_blank">Heimdal</a></dt>
+	<dd>Dashboard for quick links to selfhosted programs that will be listed.</dd>
+	<dt><a href="https://hub.docker.com/r/containrrr/watchtower" target="_blank">watchtower</a></dt>
+	<dd>Container that monitors for new versions of the containers I am using a silently updates and restarts them.</dd>
+	<dt><a href="https://hub.docker.com/r/linuxserver/transmission" target="_blank">transmission</a></dt>
+	<dd>Runs a torrent client in a docker container.</dd>
+	<dt><a href="https://hub.docker.com/r/linuxserver/sabnzbd" target="_blank">sabnzbd</a></dt>
+	<dd>Runs a usenet downloading docker container.</dd>
+	<dt><a href="https://hub.docker.com/r/linuxserver/prowlarr" target="_blank">prowlarr</a></dt>
+	<dd>Container that indexes websites for files.</dd>
+	<dt><a href="https://hub.docker.com/r/linuxserver/sonarr" target="_blank">sonarr</a></dt>
+	<dd>Container that keeps track of our TV shows.</dd>
+	<dt><a href="https://hub.docker.com/r/linuxserver/radarr" target="_blank">radarr</a></dt>
+	<dd>Container that keeps track of our movies.</dd>
+	<dt><a href="https://hub.docker.com/r/jellyfin/jellyfin" target="_blank">jellyfin</a></dt>
+	<dd>The most important of all our containers, the media streaming program. This provides a Netflix like experience to watch your TV shows or movies.</dd>
+	<dt><a href=""></a></dt>
+	<dd></dd>
+	<dt><a href=""></a></dt>
+	<dd></dd>
+	</dl>
+	</main>
+	<footer>
+	Robert Baase | <a href="mailto:baase01@email.franklin.edu">baase01@email.franklin.edu</a> | <a href="sitemap.html">Sitemap</a>
+	</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+
+/** { margin: 0px; padding: 0px; } Failsafe - remove comment only if needed! */ 
+
+img { 
+border: none; 
+}
+
+body {
+background-color: #000000;
+background-image: radial-gradient(#0099ff, #000000);
+color: #FFFFFF;
+margin: 0px;
+padding: 0px;
+}
+
+header {
+color: #FFFFFF;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+#wrapper {
+min-width: 750px;
+max-width: 750px;
+margin-left: auto;
+margin-right: auto;
+background-color: #0099ff;
+background-image: url(../img/wrapperbg.jpg);
+}
+
+#projectblock {
+margin-left: 25%;
+}
+
+#omv {
+padding: 10px;
+}
+
+#mc {
+padding: 10px;
+}
+
+#srv {
+padding: 10px;
+}
+
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+
+.rtfld {
+float: right;
+margin-top: -275px;
+position: relative;
+margin-right: 55%;
+width: 10%;
+}	
+
+.lfld {
+float: right;
+margin-top: -275px;
+position: relative;
+margin-right: 30%;
+width: 10%;
+}	
+
+.right {
+float: right;
+margin-top: -250px;
+position: relative;
+margin-right: 55%;
+width: 10%;
+}	
+
+nav {
+margin-top: -10px;	
+padding: 10px;
+word-spacing: 10px;
+text-align: center;
+background-image: url(../img/buttonbg.jpg);
+}
+
+nav a {
+text-decoration: none;
+font-weight: bold;
+}
+
+a:link { color: #FFFFFF; }
+
+a:visited { color: #FFFFFF; }
+
+a:hover { color: #CCCCCC; }
+
+main {
+min-height: 500px;
+margin: 50px;
+}
+
+main h1 {
+text-align: center;
+}
+
+h4 {
+margin-left: 15px;
+}	
+
+footer {
+padding: 10px;
+text-align: center;
+color: #FFFFFF;
+}
+
+dl {
+padding: 10px;
+}	
+
+p {
+padding: 10px;
+}	
+
+h3 {
+padding: 10px;
+}	
+
+h5 {
+padding: 10px;
+}
+
+label {
+display: block;
+width: 8em;	
+text-align: right;
+padding: 5px;
+}	
+
+input { display: block; margin-bottom: 1em; }
+
+textarea { display: block; margin-bottom: 1em; }
+
+/*
+label { 
+float: left; 
+clear: left;
+display: block;
+width: 8em; 
+padding-right: 1em;
+text-align: right; 
+}
+*/
+
+/*
+footer a:link { color: #FFFFFF; }
+
+footer a:visited { color: #FFFFFF; }
+
+footer a:hover { color: #CCCCCC; }
+*/

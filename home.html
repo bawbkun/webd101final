@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<title>Robert's Project Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<meta name="author" content="Robert Baase">
+<meta name="description" content="This page was created for a web design class. It is a current portfolio of all projects I have started or completed. This includes hypervisors, rack mounted servers, virtualization, and 3D printing. This is only the start of my documentation of all my projects.">
+<script src="jquery-1.4.2.js"></script>   
+<script src="jquery.validate.js"></script> 
+<script>
+    $(document).ready(function() {
+    $("h3").css("background-color", "green");
+    $("h3").css("color", "yellow");
+	});
+</script>
+</head>
+<body>
+<div id="wrapper">
+	<header>
+	<a href="home.html"><img src="img/header.jpg" alt="header" width="750" height="240"></a>
+	</header>
+	<nav>
+	<a href="home.html">Home</a>
+	<a href="about.html">About</a>
+	<a href="server.html">Server</a>
+	<a href="omv.html">OMV</a>
+	<a href="mineos.html">MineOS</a>
+	<a href="rpi.html">Rasp-Pi</a>
+	<a href="e3p.html">Ender3Pro</a>
+	</nav>
+	<main>	
+	<h2>Robert's Project Portfolio</h2>
+	<p>
+	This is my project portfolio website. I intend now to place 2 columns as this will be replaced by an update/changelog. But for now, this will incorporate a small welcome message. The images were all free-use stock images that were then edited together in Photoshop. This will be cited on the About page as the front page now hosts updates. (That I'm hoping could be made easier later with a possible small form to make a change rather than edit the HTML file.)
+	</p>
+	<p>
+	More updates to follow as this is the final version for my project for Web Design 101. This may make way for another self hosted website. I have yet to get Apache up and running to make this live on the server. That is a big work in progress.
+	</p>
+<div id="projectblock">
+<h3>Current Project Status
+<script>
+    $(document).ready(function() {
+	// to limit size of element & center text
+	$('h3').css('width','300px');
+	$('h3').css('text-align','center');
+	});
+</script>
+</h3>
+	<ul>
+	<li>Server - <progress value="7" max="10">70%</progress></li>
+	<li>Ender3Pro - <progress value="7" max="10">70%</progress></li>
+	<li>MineOS - <progress value="1" max="3">33%</progress></li>
+	</ul>
+</div>	
+	</main>
+	<footer>
+	Robert Baase | <a href="mailto:baase01@email.franklin.edu">baase01@email.franklin.edu</a> | <a href="sitemap.html">Sitemap</a>
+	</footer>
+</div>
+</body>
+</html>
